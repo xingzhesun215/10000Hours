@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scream_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <TextView
+        android:id="@+id/tv_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="锁定情况"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_add_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:hint="添加后不可更改"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>
